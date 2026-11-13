@@ -1,0 +1,25 @@
+# $ uv run phishing_lookalike.py --selfcheck   (2026-11-13, Linux, headless Chromium, 14 s wall)
+url                                                  best            inl phash  verdict
+https://paypa1-account-verify.com/signin             PayPal          286 0.844  IMPERSONATES PayPal
+https://login-microsoftonline.support/common/oauth2  Microsoft       350 0.875  IMPERSONATES Microsoft
+https://chase-secure-alerts.net/logon                Chase           183 0.844  IMPERSONATES Chase
+https://bofa-online-verify.info/login                BankOfAmerica   360 0.875  IMPERSONATES BankOfAmerica
+https://wellsfargo.account-review.co/signon          WellsFargo      434 0.812  IMPERSONATES WellsFargo
+https://appleid.apple.com-locked.xyz/                Apple           358 0.844  IMPERSONATES Apple
+https://accounts-google.security-check.top/          Google          322 0.812  IMPERSONATES Google
+https://amazon-billing-update.shop/ap/signin         Amazon          210 0.844  IMPERSONATES Amazon
+https://netflix-payment-hold.com/login               Netflix         230 0.781  IMPERSONATES Netflix
+https://coinbase-wallet-restore.app/signin           Coinbase        371 0.844  IMPERSONATES Coinbase
+https://www.paypal.com/signin                        PayPal          539   1.0  LEGIT PayPal
+https://login.microsoftonline.com/common/oauth2      Microsoft       570   1.0  LEGIT Microsoft
+https://secure.chase.com/logon                       Chase           419   1.0  LEGIT Chase
+https://www.netflix.com/login                        Netflix         425   1.0  LEGIT Netflix
+https://intranet-portal.example.org/login            Microsoft        11 0.438  NO_MATCH
+https://gardening-weekly.blog/tomatoes               Chase            23   0.5  NO_MATCH
+https://localnews.example.net/today                  Chase            24   0.5  NO_MATCH
+https://recipes.example.com/bread                    PayPal           27 0.469  NO_MATCH
+https://tech-notes.dev/rust                          Apple            31 0.469  NO_MATCH
+https://club-members.example.com/login               Coinbase         11 0.438  NO_MATCH
+
+20/20 verdicts as expected -> out/verdicts.json
+SELFCHECK OK: 20/20 verdicts match; screenshots re-read and hash-verified
